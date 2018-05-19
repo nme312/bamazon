@@ -9,7 +9,8 @@ create table products(
     department_name varchar(255),
     price int,
     stock_quantity int,
-    primar key (item_id)
+    product_sales varchar(255),
+    primary key (item_id)
 );
 
 insert into products (product_name, department_name, price, stock_quantity)
@@ -41,3 +42,13 @@ values("Oxfords", "Shoes", 300, 6000);
 
 insert into products (product_name, department_name, price, stock_quantity)
 values("Vicious by V.E.Schwab", "Books", 25, 10000);
+
+create table departments(
+    department_id int not null auto_increment,
+    department_name varchar(255),
+    over_head_cost int
+);
+
+-- department_id
+-- department_name
+-- over_head_cost
