@@ -9,7 +9,7 @@ create table products(
     department_name varchar(255),
     price int,
     stock_quantity int,
-    primar key (id)
+    primar key (item_id)
 );
 
 insert into products (product_name, department_name, price, stock_quantity)

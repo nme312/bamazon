@@ -53,7 +53,6 @@ function start() {
             if (response.order <= data[0].stock_quantity) {
                 data[0].stock_quantity -= response.order;
                 connection.query("update products set stock_quantity = ? where item_id = ?", [data[0].stock_quantity, response.item_id], function (err, data) {
-                    // console.log(`${data[i].item_id} | ${data[i].product_name} | $${data[i].price}`)
                     if (err) {
                         throw err;
                     }
