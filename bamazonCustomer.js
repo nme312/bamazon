@@ -57,15 +57,22 @@ function start() {
                         throw err;
                     }
                     connection.query("select * from products where item_id = ?", response.item_id, function (err, data) {
-                        console.log(`Purchase Successful, Your Total Is $${data[0].price * response.order}`);
+                        var saleTotal = data[0].price * response.order;
+                        console.log(`Purchase Successful, Your Total Is $${saleTotal}`);
                         displayAll();
+                        
+                        connection.query("update products set product_sales = ? where item_id = ?", [data[0].product_sales+saleTotal, response.item_id], function(err, data) {
+                            if(err) {
+                                throw err;
+                            }
+                        });
                     });
                 });
             } else {
                 console.log("Insufficient Quantity");
                 displayAll();
             }
-        })
+        });
     });
 }
 

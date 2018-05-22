@@ -46,7 +46,8 @@ values("Vicious by V.E.Schwab", "Books", 25, 10000);
 create table departments(
     department_id int not null auto_increment,
     department_name varchar(255),
-    over_head_cost int
+    over_head_costs int,
+    primary key (department_id)
 );
 
 -- department_id
