@@ -14,34 +14,34 @@ create table products(
 );
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Beats Studio3", "Electronics", 350, 10000);
+values("Beats Studio3", "Electronics", 350, 35);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Spider-Man PS4", "Games", 60, 10000);
+values("Spider-Man PS4", "Games", 60, 32);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("G-Shock", "Jewelry", 200, 6000);
+values("G-Shock", "Jewelry", 200, 30);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("iPhone X", "Electronics", 1000, 950);
+values("iPhone X", "Electronics", 1000, 12);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("1971 Chevrolet Corvette Stingray", "Automotive", 40000, 560);
+values("1971 Chevrolet Corvette Stingray", "Automotive", 40000, 3);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Sharp T.V.", "Electronics", 400, 9500);
+values("Sharp T.V.", "Electronics", 400, 15);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Air Jordan 1", "Shoes", 120, 10000);
+values("Air Jordan 1", "Shoes", 120, 4);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Leather Jacket", "Clothes", 250, 7000);
+values("Leather Jacket", "Clothes", 250, 14);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Oxfords", "Shoes", 300, 6000);
+values("Oxfords", "Shoes", 300, 2);
 
 insert into products (product_name, department_name, price, stock_quantity)
-values("Vicious by V.E.Schwab", "Books", 25, 10000);
+values("Vicious by V.E.Schwab", "Books", 25, 36);
 
 create table departments(
     department_id int not null auto_increment,
